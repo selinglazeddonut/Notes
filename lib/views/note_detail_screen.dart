@@ -17,7 +17,13 @@ class NoteDetailScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Note Title: $noteTitle'),
+            Text(
+              'Note Title: $noteTitle',
+              style: TextStyle(
+                color: Colors.black, // Siyah renk
+                fontSize: 18.0,
+              ),
+            ),
             ElevatedButton(
               onPressed: () async {
                 // Notu silme işlemini gerçekleştir
@@ -34,3 +40,4 @@ class NoteDetailScreen extends StatelessWidget {
     );
   }
 }
+
